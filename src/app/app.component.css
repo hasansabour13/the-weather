@@ -1,0 +1,44 @@
+div {
+  display: flex;
+  /* المنت را به حالت فلکس‌باکس درمی‌آورد که به راحتی قابلیت ترازبندی دارد */
+  flex-direction: column;
+  /* عناصر داخل <div> را به صورت عمودی قرار می‌دهد */
+  align-items: center;
+  /* عناصر را در محور افقی مرکز چینش می‌کند */
+  justify-content: center;
+  /* عناصر را در محور عمودی مرکز چینش می‌کند */
+
+}
+
+select {
+  width: 50%;
+  border: double 10px green;
+  font-size: 1.5em;
+}
+
+.option {
+  direction: rtl;
+  font-size: larger;
+  font-weight: bolder;
+  color: green;
+}
+
+.text{
+  font-size: 60px;
+  color: red;
+  font-weight: bolder;
+}
+
+.text2{
+  font-size: 60px;
+  color:green;
+  font-weight: bolder;
+}
+
+.text3{
+  font-size: 60px;
+  color:blue;
+  font-weight: bolder;
+}
+
+

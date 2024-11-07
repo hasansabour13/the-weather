@@ -1,0 +1,18 @@
+<div>
+  <h1>the weather</h1>
+  <h2>Please select your desired city</h2>
+  <select [(ngModel)]="selectedCity" (change)="getWeather()">
+    <option class="option" value="Tehran">تهران</option>
+    <option class="option" value="Los Angeles">لس‌آنجلس</option>
+    <option class="option" value="New York">نیویورک</option>
+    <option class="option" value="London">لندن</option>
+    <option class="option" value="Tokyo">توکیو</option>
+  </select>
+</div>
+
+<div *ngIf="weatherInfo">
+  <h2 class="text">آب و هوای {{ selectedCity }}</h2>
+  <p class="text2">دمای کنونی: °C{{ weatherInfo.temp }}</p>
+  <p class="text3">شرایط: {{ weatherInfo.weather.description }}</p>
+  <img *ngIf="cityImage" [src]="cityImage"     alt="{{ selectedCity }} Image" width="200" height="150" />
+</div>
